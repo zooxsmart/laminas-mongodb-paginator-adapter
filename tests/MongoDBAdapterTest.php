@@ -7,19 +7,14 @@ namespace MariojrrcTest\Laminas\Paginator;
 use Mariojrrc\Laminas\Paginator\Exception\InvalidClass;
 use Mariojrrc\Laminas\Paginator\MongoDBAdapter;
 use MariojrrcTest\Laminas\Paginator\Mock\EntityClass;
-use MongoDB\BSON\Unserializable;
 use MongoDB\Collection;
-use MongoDB\Driver\Cursor;
 use MongoDB\Driver\Query;
 use MongoDB\Model\BSONDocument;
 use PHPUnit\Framework\TestCase;
 use Prophecy\Argument;
-use Prophecy\PhpUnit\ProphecyTrait;
 
 class MongoDBAdapterTest extends TestCase
 {
-    use ProphecyTrait;
-
     protected function setUp() : void
     {
     }
