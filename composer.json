@@ -13,7 +13,7 @@
     ],
     "minimum-stability": "stable",
     "require": {
-        "php": "^7.2",
+        "php": "^7.4 | 8.*",
         "ext-mongodb": "*",
         "mongodb/mongodb": "^1.6.0",
         "laminas/laminas-paginator": "^2.8"

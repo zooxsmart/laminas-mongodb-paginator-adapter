@@ -17,14 +17,11 @@ use function sprintf;
 
 class MongoDBAdapter implements AdapterInterface
 {
-    /** @var Collection */
-    private $collection;
-    /** @var array */
-    private $conditions;
-    /** @var array */
-    private $options;
+    private Collection $collection;
+    private array $conditions;
+    private array $options;
     /** @var string|null if informed it must implements MongoDB\BSON\Unserializable interface */
-    private $entityClass;
+    private ?string $entityClass = null;
 
     public function __construct(
         Collection $collection,
@@ -52,7 +49,7 @@ class MongoDBAdapter implements AdapterInterface
         $cursor = $this->collection->getManager()->executeQuery($this->collection->getNamespace(), $query);
 
         if ($this->entityClass !== null && class_exists($this->entityClass)) {
-            if (! in_array(Unserializable::class, class_implements($this->entityClass))) {
+            if (! in_array(Unserializable::class, class_implements($this->entityClass), true)) {
                 throw new InvalidClass(sprintf(
                     'Class %s must implement %s interface',
                     $this->entityClass,
