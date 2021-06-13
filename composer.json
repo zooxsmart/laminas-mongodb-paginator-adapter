@@ -3,7 +3,7 @@
     "description": "MongoDB Adapter to be used with Laminas Paginator",
     "keywords": ["PHP","Laminas","MongoDB","laminas-paginator","paginator"],
     "type": "library",
-    "license": "LGPL",
+    "license": "BSD-3-Clause",
     "homepage": "https://github.com/mariojrrc/laminas-mongodb-paginator-adapter",
     "authors": [
         {
