@@ -1,10 +1,10 @@
 {
-    "name": "mariojrrc/laminas-mongodb-paginator-adapter",
+    "name": "zooxsmart/laminas-mongodb-paginator-adapter",
     "description": "MongoDB Adapter to be used with Laminas Paginator",
     "keywords": ["PHP","Laminas","MongoDB","laminas-paginator","paginator"],
     "type": "library",
     "license": "BSD-3-Clause",
-    "homepage": "https://github.com/mariojrrc/laminas-mongodb-paginator-adapter",
+    "homepage": "https://github.com/zooxsmart/laminas-mongodb-paginator-adapter",
     "authors": [
         {
             "name": "Mario Costa",
@@ -15,7 +15,7 @@
     "require": {
         "php": "^7.4 | 8.*",
         "ext-mongodb": "*",
-        "mongodb/mongodb": "^1.6.0",
+        "mongodb/mongodb": "^2.0.0",
         "laminas/laminas-paginator": "^2.8"
     },
     "require-dev": {
